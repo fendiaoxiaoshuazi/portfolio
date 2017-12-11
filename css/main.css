@@ -103,7 +103,7 @@ body {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	color: #6c7279;
-	overflow-x:hiden;
+	overflow-x:hidden;
 }
 ul, ol {
 	margin: 0;
