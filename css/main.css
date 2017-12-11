@@ -571,7 +571,7 @@ ul li {
 /* Slideshow container */
 .slideshow-container {
   width: 80%;
-  height:350px;
+  height:calc(50vh-70px);
   position: relative;
   margin: auto;
   background-color:#7b7b7c;
