@@ -10,10 +10,10 @@ $(document).ready(function() {
 		}
 	});
 
-	/*
+	
 	// Fancybox
-	$('.work-box').fancybox();
-*/
+	$('.work-boxA').fancybox();
+
 	// Page Scroll
 	var sections = $('section')
 		nav = $('nav[role="navigation"]');
@@ -59,7 +59,7 @@ $(document).ready(function() {
 		nav.toggleClass('open');
 	});
 	
-	// Get the modal
+	// Get the modal0
 	var modal = document.getElementById('Modal_resume');
 	var btnVF = document.getElementById('VF');
 	btnVF.onclick = function(){
@@ -75,10 +75,10 @@ $(document).ready(function() {
 	  document.getElementsByTagName("BODY")[0].className = "";
 	}
 	
-	// Get the modal2
+	// Get the modal1
 	var modal1 = document.getElementById('Model_project');
-	var btnpj1 = document.getElementById('project1');
-	btnpj1.onclick = function(){
+	var btnpj0 = document.getElementById('project0');
+	btnpj0.onclick = function(){
 		modal1.style.display = "block";
 		document.getElementsByTagName("BODY")[0].className = "noscroll";
 	}
@@ -91,8 +91,40 @@ $(document).ready(function() {
 	  document.getElementsByTagName("BODY")[0].className = "";
 	}
 	
+	// Get the modal2
+	var modal2 = document.getElementById('Model_project1');
+	var btnpj1 = document.getElementById('project1');
+	btnpj1.onclick = function(){
+		modal2.style.display = "block";
+		document.getElementsByTagName("BODY")[0].className = "noscroll";
+	}
+	// Get the <span> element that closes the modal
+	var span2 = document.getElementsByClassName("close")[2];
+
+	// When the user clicks on <span> (x), close the modal
+	span2.onclick = function() { 
+	  modal2.style.display = "none";
+	  document.getElementsByTagName("BODY")[0].className = "";
+	}
+	
+	// Get the modal3
+	var modal3 = document.getElementById('Model_project2');
+	var btnpj2 = document.getElementById('project2');
+	btnpj2.onclick = function(){
+		modal3.style.display = "block";
+		document.getElementsByTagName("BODY")[0].className = "noscroll";
+	}
+	// Get the <span> element that closes the modal
+	var span3 = document.getElementsByClassName("close")[3];
+
+	// When the user clicks on <span> (x), close the modal
+	span3.onclick = function() { 
+	  modal3.style.display = "none";
+	  document.getElementsByTagName("BODY")[0].className = "";
+	}
 	
 	
+	//
 	var slideIndex = 1;
 	showSlides(slideIndex);
 

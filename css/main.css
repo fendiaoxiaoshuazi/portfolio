@@ -555,19 +555,73 @@ ul li {
 /* ------------------------------------------------------------------------------
 	 Works
 -------------------------------------------------------------------------------*/
-#Model_project{
-
+#Model_project3{
+	display:block;
 }
-#modal-project{
+.modal-project{
 	background-color:white;
 	margin-left: 1%;
 	position: absolute;
     top: 15px;
 	width:98%;	
-	max-height:calc(95vh - 7px);
+	height:calc(100vh - 30px);
 	overflow: hide;
 }
+#Model_project img:hover{
+	transform: none;
+	border:solid 2px rgba(232, 69, 69, 0.9);
+}
+#Model_project1 img:hover{
+	transform: none;
+	border:solid 2px rgba(232, 69, 69, 0.9);
+}
+#Model_project2 img:hover{
+	transform: none;
+	border:solid 2px rgba(232, 69, 69, 0.9);
+}
+.PHeading {
+	display:block;
+	position: fixed;
+	height: 80px;
+	width: 98%;
+	padding: 0 5%;
+	top:15px;
+	background-color:#eeecef;
+	overflow:hidden;
+	z-index:1000;
+}
+.projectcontent{
+	position: relative;
+	top: 100px;
+	padding: 0 15px 0 50px;
+	height:100%;
+}
+.leftproject{
+	width: 60%;
+	float:left;
+	overflow-y:auto;
+	overflow-x:hide;
+	height: calc(100vh - 140px);
+}
 
+.rightproject{
+	padding-left:0.5%;
+	margin-left:0.5%;
+	border-left:1px solid black;
+	width: 39%;
+	height: calc(100vh - 140px);
+	float:right;
+	overflow-y:scroll;
+	overflow-x:hide;
+}
+
+.rightproject img{
+	width: 99%;
+}
+
+.rightproject img:hover{
+	width: 100%;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -864,9 +918,9 @@ input[type=text], select, textarea {
 	margin: auto;
 	text-align: left;
 	padding-top: 1%;
-	padding-bottom: 7%;
+	padding-bottom: 1%;
 	background-color: #e5e5e5;
-	height:calc(100vh - 75.4px);
+	min-height:calc(100vh - 75.4px);
 }
 .footer h4 {
 	font-size: 14px;
