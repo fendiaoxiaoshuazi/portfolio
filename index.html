@@ -552,8 +552,8 @@ Thank you for your time! If you're interested in working together, please <a hre
 				<textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
 				
 			  </form>
-			  <button class="btn" id="ContactB">Submit</button>
-				<p id="demo"></p>
+			  <button class="btn" id="ContactB">Submit </button><span id="demo"></span>
+			  
 		</div>
 	</div>
 	<br><br><br><br>
@@ -580,13 +580,15 @@ Thank you for your time! If you're interested in working together, please <a hre
 <!-- footer section --> 
 
 <!-- JS FILES --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script--> 
+<script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/jquery.fancybox.pack.js"></script> 
 <!--script src="js/retina.min.js"></script--> 
 <script src="js/modernizr.js"></script> 
 <script src="js/main.js"></script>
 <script src="https://js.arcgis.com/4.5/"></script>
+
 <script>
 require(["esri/config"], function(esriConfig) {
   esriConfig.request.corsEnabledServers.push("http://www.jiatengxu.com");
@@ -767,6 +769,23 @@ require([
 		var data = { 'value1': document.getElementById("name").value,
 				'value2' : document.getElementById("email").value,
 				'value3' : document.getElementById("subject").value};
+		var jsonsend = JSON.stringify(data);
+		$.ajax({
+        type: 'POST',
+        dataType: 'jsonp text',
+        data: data,
+        jsonpCallback: 'callback',
+		callback: JSON.stringify(data),
+        url: "https://maker.ifttt.com/trigger/getemail/with/key/n5NtzRd9Y39ZAnPMxiecHyuOwBPhE8M0zOAEf8AtJOr",
+        success: function (result,status,xhr) {
+            document.getElementById("demo").innerHTML = result;
+        },
+		error: function (xhr,status,error) {
+            document.getElementById("demo").innerHTML = xhr.status + " " + xhr.statusText;
+			console.log(xhr);
+        }
+    });
+		/*
 			if (window.XMLHttpRequest) {
 				// code for modern browsers
 				xmlhttp = new XMLHttpRequest();
@@ -786,12 +805,13 @@ require([
 			};
 			
 			
-			var jsonsend = JSON.stringify(data);
+			
 			console.log(jsonsend);
 			xhttp.open("POST", "https://maker.ifttt.com/trigger/getemail/with/key/n5NtzRd9Y39ZAnPMxiecHyuOwBPhE8M0zOAEf8AtJOr", true);
 			xhttp.setRequestHeader("Content-type", "application/json");
 			xhttp.setRequestHeader('Access-Control-Allow-Origin', '*');
 			xhttp.send(jsonsend);	
+		*/
 	}
 
 
