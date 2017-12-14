@@ -422,19 +422,20 @@ ul li {
 	min-height: 750px;
 }
 .DR{
-	padding: 1.5% 10%;
-	margin-right:15%;
+	
 	float: right;
+	width:45%;
 }
 .VF{
-	padding: 1.5% 8.1%;
-	margin-left:15%;
 	float: left;
+	width:45%;
 }
 /* ==========================================================================
 	$resume
 ========================================================================== */
-
+#hidebr {
+	display:none;
+}
 #modal-resume{
 	background-color:white;
 	margin-left: 1%;
@@ -463,6 +464,7 @@ ul li {
 #DR2 {
 	float:right;
 	padding: 15px 60px;
+	margin-right:15%;
 }
 #resume{
 	margin-top: 80px;
@@ -590,6 +592,9 @@ ul li {
 	overflow:hidden;
 	z-index:1000;
 }
+.PHeading h3{
+	width:95%;
+}
 .projectcontent{
 	position: relative;
 	top: 100px;
@@ -626,10 +631,11 @@ ul li {
 /* Slideshow container */
 .slideshow-container {
   width: 90%;
-  height:300px;
+  height:30vw;
+  max-height:340px;
   position: relative;
   margin: auto;
-  background-color:#7b7b7c;
+  background-color:#717171;
 }
 
 /* Hide the images by default */
@@ -639,6 +645,49 @@ ul li {
 	margin-right:3%;
 }
 
+.mySlides h4{
+	color:white;
+}
+
+.mySlides p{
+	color:white;
+}
+
+#largewidth{
+	width:60%;
+	padding:2vw 0;
+}
+
+.slidesphoto {
+	height:100%;
+	width:55%;
+	overflow:hidden;
+	float:left; 
+	position:absolute;
+}
+
+.slidesphoto img{
+	max-height:100%;
+	max-width:517px;
+	width:100%;
+	margin: auto;
+}
+
+#largewidth img{
+	max-height:100%;
+	max-width:610px;
+	width:100%;
+}
+.slidescontent {
+	padding:45px;
+	height:90%; 
+	width:40%; 
+	float:right; 
+	color:white; 
+}
+#norrowC{
+	width:35%; 
+}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -779,6 +828,9 @@ ul li {
 	-webkit-transform: translate3d(0, 200%, 0);
 	transform: translate3d(0, 200%, 0);
 }
+.work-box img{
+	height:241.8px;
+}
 .work-box:hover img {
 	-moz-transform: scale(1.2);
 	-ms-transform: scale(1.2);
@@ -798,6 +850,9 @@ ul li {
 /* ------------------------------------------------------------------------------
 	 Skills
 -------------------------------------------------------------------------------*/
+#skills{
+	padding-top:50px;
+}
 .skill-bars {
 	list-style: none;
 	margin: 6rem 0 3rem;
@@ -919,8 +974,8 @@ input[type=text], select, textarea {
 	text-align: left;
 	padding-top: 1%;
 	padding-bottom: 1%;
-	background-color: #e5e5e5;
-	min-height:calc(100vh - 75.4px);
+	background-color:#e5e5e5;
+	min-height:100px;
 }
 .footer h4 {
 	font-size: 14px;

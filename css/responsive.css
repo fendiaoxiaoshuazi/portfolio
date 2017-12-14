@@ -22,8 +22,18 @@
 	margin-left: 25%;
 	font-weight: 700;
 }
+.slidescontent {
+	padding:30px;
 }
- 
+#hidebr {
+	display:block;
+}
+}
+ @media screen and (max-width: 1034px) {
+.slidescontent {
+	padding:10px;
+}
+ }
  @media screen and (max-width: 1024px) {
 .banner {
 	min-height: 450px;
@@ -92,6 +102,35 @@
 .flex-control-nav {
 	bottom: 20px;
 }
+#resume h3{
+	font-size:20px;
+}
+#resume h4{
+	font-size:17px;
+}
+}
+ @media screen and (max-width: 940px) {
+.slidescontent {
+	padding:0 10px;
+ }
+ .slidescontent br{
+	display:none;
+}
+.slidescontent h4{
+	font-size:14px;
+}
+.slidescontent p{
+	font-size:12px;
+}
+.projectcontent{
+	padding:0 15px 0 30px;
+}
+.work-box img{
+	height:220px;
+}
+#reservefoot{
+	display:none;
+}
 }
  @media screen and (max-width: 768px) {
 .banner-text {
@@ -115,6 +154,36 @@
 .footer .footer-col {
 	margin-bottom: 50px;
 }
+.slidescontent {
+	padding: 0 15px;
+}
+.slidescontent p{
+	display:none;
+}
+.projectcontent{
+	padding:0 5px 0 10px;
+}
+.PHeading h3{
+	font-size:20px;
+}
+.work-box img{
+	height:200px;
+}
+.skill-bars li strong{
+	top: -4rem;
+	letter-spacing: .2rem;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+}
+.skill-bars li p {
+	top: -2rem;
+	letter-spacing: .2rem;
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+}
+#skills{
+	padding-top:10px;
+}
 }
  @media screen and (max-width: 640px) {
 .banner-text {
@@ -129,6 +198,19 @@
 }
 .banner-text a {
 	margin: 0;
+}
+.DR{
+	float:left;
+	margin-left:10vw;
+	width:80%;
+}
+.VF{
+	float:left;
+	margin-left:10vw;
+	width:80%;
+}
+.work-box img{
+	height:150px;
 }
 }
  @media screen and (max-width: 480px) {
