@@ -557,9 +557,7 @@ ul li {
 /* ------------------------------------------------------------------------------
 	 Works
 -------------------------------------------------------------------------------*/
-#Model_project3{
-	display:block;
-}
+
 .modal-project{
 	background-color:white;
 	margin-left: 1%;
@@ -580,6 +578,14 @@ ul li {
 #Model_project2 img:hover{
 	transform: none;
 	border:solid 2px rgba(232, 69, 69, 0.9);
+}
+#Model_project3 img:hover{
+	transform: none;
+	border:solid 2px rgba(232, 69, 69, 0.9);	
+}
+#Model_project4 img:hover{
+	transform: none;
+	border:solid 2px rgba(232, 69, 69, 0.9);	
 }
 .PHeading {
 	display:block;

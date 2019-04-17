@@ -122,7 +122,40 @@ $(document).ready(function() {
 	  modal3.style.display = "none";
 	  document.getElementsByTagName("BODY")[0].className = "";
 	}
+
+
+	// Get the modal4
+	var modal4 = document.getElementById('Model_project3');
+	var btnpj3 = document.getElementById('project3');
+	btnpj3.onclick = function(){
+		modal4.style.display = "block";
+		document.getElementsByTagName("BODY")[0].className = "noscroll";
+	}
+	// Get the <span> element that closes the modal
+	var span4 = document.getElementsByClassName("close")[4];
+
+	// When the user clicks on <span> (x), close the modal
+	span4.onclick = function() { 
+		modal4.style.display = "none";
+		document.getElementsByTagName("BODY")[0].className = "";
+	}
 	
+	
+		// Get the modal5
+		var modal5 = document.getElementById('Model_project4');
+		var btnpj4 = document.getElementById('project4');
+		btnpj4.onclick = function(){
+			modal5.style.display = "block";
+			document.getElementsByTagName("BODY")[0].className = "noscroll";
+		}
+		// Get the <span> element that closes the modal
+		var span5 = document.getElementsByClassName("close")[5];
+	
+		// When the user clicks on <span> (x), close the modal
+		span5.onclick = function() { 
+			modal5.style.display = "none";
+			document.getElementsByTagName("BODY")[0].className = "";
+		}
 	
 	//
 	var slideIndex = 1;
