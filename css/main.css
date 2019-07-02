@@ -87,6 +87,10 @@ h5 {
     text-decoration: none;
     cursor: pointer;
 }
+
+.esri-view-height-less-than-medium .esri-popup__main-container {
+	max-height: 300px !important;
+}
 /* ------------------------------------------------------------------------------
 	 General Style
 -------------------------------------------------------------------------------*/
