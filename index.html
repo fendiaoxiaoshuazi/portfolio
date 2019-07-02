@@ -856,7 +856,7 @@ require([
 	  renderer: trunkRenderer,  // set renderer on layer
 	  popupTemplate: { // autocasts as new PopupTemplate()
             title: "{url}",
-            content: "<img src='images/footprint/{url}.jpg' srcset='images/footprint/{url}.JPG'>"
+            content: "<img src='images/footprint/{url}.jpg' onerror=this.src='images/footprint/{url}.JPG'>"
           }
 		});
 	map.add(trunkLyr);
