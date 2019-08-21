@@ -326,6 +326,16 @@
 	  <div class="slideshow-container">
 		<!-- Full-width images with number and caption text -->
 		<div class="mySlides fade">
+			<div class='slidesphoto' id="largewidth">
+				<img src="images/work-31big.jpg">
+			</div>
+			<div class='slidescontent'>
+					<h4>Groundwater Web App</h4><br>
+					<p>The groundwater project funded by DNR Serendipity Grant. 
+						The Groundwater Web App was developed for academic support and dissemination proposes.</p>
+			</div>
+		</div>
+		<div class="mySlides fade">
 			<div class='slidesphoto'>
 				<img src="images/work-1big.jpg">
 			</div>
@@ -369,6 +379,13 @@
 	<br><br>
 	  <div class="container-fluid" style="position:static">
 		<div class="row no-gutter">
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 work"> <a id = "project5" class="work-box"> <img src="images/work-31.png" alt="">
+			<div class="overlay">
+				<div class="overlay-caption">
+				<p><i class="fa fa-search-plus fa-2x"></i></p>
+				</div>
+			</div>
+			</a> </div>
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 work"> <a id = "project4" class="work-box"> <img src="images/work-23.png" alt="">
 			<div class="overlay">
 				<div class="overlay-caption">
@@ -527,58 +544,86 @@
 </div>
 
 <div class="modal" id="Model_project3">
-		<span class="close">&times;</span>
-		<div class="modal-project">
-		<div class="PHeading">
-			<h3 style="font-size: 26px;">Compare Rolling Windows, EM, and HMM in AIS Fishing Activity Detection</h3>
+	<span class="close">&times;</span>
+	<div class="modal-project">
+	<div class="PHeading">
+		<h3 style="font-size: 26px;">Compare Rolling Windows, EM, and HMM in AIS Fishing Activity Detection</h3>
+	</div>
+	<div class="projectcontent">
+		<div class="leftproject">
+			<h5>Description</h5>
+			<p>The objective of the project is to classify the fishing and non-fishing activities using AIS data, 
+				which is meaningful because the results can be used to identify illegal fishing. Our main dataset was AIS, 
+				which is a tracking system of the vessel. We also acquired fishing vessel data from Global Fish Watch to select trawlers from the AIS dataset. We implemented Rolling Windows, 
+				Expectation–Maximization (EM), and Hidden Markov Model (HMM) models to classify the fishing and non-fishing activities and compared the performance of them. HMM model showed slightly better result in the content of our project.</p>
+			<br>
+			<h5>Methodology</h5>
+			<p></p>
+			<a href="images/project/4.1.png" class="work-box work-boxA"> <img style="float:left;width:95%;" src="images/project/4.1.png"></a>
+			<br>
 		</div>
-		<div class="projectcontent">
-			<div class="leftproject">
-				<h5>Description</h5>
-				<p>The objective of the project is to classify the fishing and non-fishing activities using AIS data, 
-					which is meaningful because the results can be used to identify illegal fishing. Our main dataset was AIS, 
-					which is a tracking system of the vessel. We also acquired fishing vessel data from Global Fish Watch to select trawlers from the AIS dataset. We implemented Rolling Windows, 
-					Expectation–Maximization (EM), and Hidden Markov Model (HMM) models to classify the fishing and non-fishing activities and compared the performance of them. HMM model showed slightly better result in the content of our project.</p>
-				<br>
-				<h5>Methodology</h5>
-				<p></p>
-				<a href="images/project/4.1.png" class="work-box work-boxA"> <img style="float:left;width:95%;" src="images/project/4.1.png"></a>
-				<br>
-			</div>
-			<div class="rightproject">
-				<h5>Results</h5>
-			</div>
-		</div>
+		<div class="rightproject">
+			<h5>Results</h5>
 		</div>
 	</div>
+	</div>
+</div>
 
-	<div class="modal" id="Model_project4">
-			<span class="close">&times;</span>
-			<div class="modal-project">
-			<div class="PHeading">
-				<h3 style="font-size: 26px;">Building detection methods comparison of OBIA and CNNs</h3>
-			</div>
-			<div class="projectcontent">
-				<div class="leftproject">
-					<h5>Description</h5>
-					<p>Nowadays, Deep learning becomes the most popular topic in the scientific world, especially CNN, it totally changes the world of visual imagery analysis. Does it means deep learning methods, can outperform other traditional methods in all scenario? 
-							Object detection of buildings on UMN campus is the scenario we examined for this project. 
-							We applied OBIA and CNN on the same RS 4-band remote sensing image. OBIA mainly rely on empirical knowledge; while CNN rely on the data-trained model. After we got output from both OBIA and CNN, we compare two methods in the end.
-							</p>
-					<br>
-					<h5>Methodology</h5>
-					<p></p>
-					<a href="images/project/5.1.JPG" class="work-box work-boxA"> <img style="float:left;width:40%;" src="images/project/5.1.JPG"></a>
-					<br>
-				</div>
-				<div class="rightproject">
-					<h5>Results</h5>
-					<a href="images/project/5.2.png" class="work-box work-boxA"> <img src="images/project/5.2.png"></a>
-					<a href="images/project/5.3.png" class="work-box work-boxA"> <img src="images/project/5.3.png"></a>
-				</div>
-			</div>
-			</div>
+<div class="modal" id="Model_project4">
+	<span class="close">&times;</span>
+	<div class="modal-project">
+	<div class="PHeading">
+		<h3 style="font-size: 26px;">Building detection methods comparison of OBIA and CNNs</h3>
+	</div>
+	<div class="projectcontent">
+		<div class="leftproject">
+			<h5>Description</h5>
+			<p>Nowadays, Deep learning becomes the most popular topic in the scientific world, especially CNN, it totally changes the world of visual imagery analysis. Does it means deep learning methods, can outperform other traditional methods in all scenario? 
+					Object detection of buildings on UMN campus is the scenario we examined for this project. 
+					We applied OBIA and CNN on the same RS 4-band remote sensing image. OBIA mainly rely on empirical knowledge; while CNN rely on the data-trained model. After we got output from both OBIA and CNN, we compare two methods in the end.
+					</p>
+			<br>
+			<h5>Methodology</h5>
+			<p></p>
+			<a href="images/project/5.1.JPG" class="work-box work-boxA"> <img style="float:left;width:40%;" src="images/project/5.1.JPG"></a>
+			<br>
 		</div>
+		<div class="rightproject">
+			<h5>Results</h5>
+			<a href="images/project/5.2.png" class="work-box work-boxA"> <img src="images/project/5.2.png"></a>
+			<a href="images/project/5.3.png" class="work-box work-boxA"> <img src="images/project/5.3.png"></a>
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="modal" id="Model_project5">
+	<span class="close">&times;</span>
+	<div class="modal-project">
+	<div class="PHeading">
+		<h3 style="font-size: 26px;">Goundwater Web App</h3>
+	</div>
+	<div class="projectcontent">
+		<div class="leftproject">
+			<h5>Description</h5>
+			<p>
+				Due to the hidden and complex natures of groundwater, it is often undervalued by researches and the public. Groundwater is poorly understood yet desperately needs attention; in this circumstance, the Groundwater web app was developed for both academic support and dissemination proposes. The groundwater web app explains basic knowledge, visualizes the spatial-temporal information, and shows statistic and analytic results. Based on the currently existing data sources, the web app consists of 6 major sections: 1) Introduction, 2) Summary Charts, 3) Well Observation Data, 4) MPARS Data, 5) Other Analysis Maps, 6) Get Data. 
+			</p>
+			<br>
+			<h5>Link</h5>
+			<a href="https://maps.umn.edu/mpars/index.html">https://maps.umn.edu/mpars/index.html</a>
+			<br><br>
+		</div>
+		<div class="rightproject">
+			<h5>Results</h5>
+			<a href="images/project/6.1.JPG" class="work-box work-boxA"> <img src="images/project/6.1.JPG"></a>
+			<a href="images/project/6.2.JPG" class="work-box work-boxA"> <img src="images/project/6.2.JPG"></a>
+			<a href="images/project/6.3.JPG" class="work-box work-boxA"> <img src="images/project/6.3.JPG"></a>
+			<a href="images/project/6.4.JPG" class="work-box work-boxA"> <img src="images/project/6.4.JPG"></a>
+		</div>
+	</div>
+	</div>
+</div>
 <!-- project model --> 
 <!-- work section --> 
 

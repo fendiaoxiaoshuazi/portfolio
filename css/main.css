@@ -591,6 +591,10 @@ ul li {
 	transform: none;
 	border:solid 2px rgba(232, 69, 69, 0.9);	
 }
+#Model_project5 img:hover{
+	transform: none;
+	border:solid 2px rgba(232, 69, 69, 0.9);	
+}
 .PHeading {
 	display:block;
 	position: fixed;

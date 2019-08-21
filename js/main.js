@@ -141,21 +141,37 @@ $(document).ready(function() {
 	}
 	
 	
-		// Get the modal5
-		var modal5 = document.getElementById('Model_project4');
-		var btnpj4 = document.getElementById('project4');
-		btnpj4.onclick = function(){
-			modal5.style.display = "block";
-			document.getElementsByTagName("BODY")[0].className = "noscroll";
-		}
-		// Get the <span> element that closes the modal
-		var span5 = document.getElementsByClassName("close")[5];
-	
-		// When the user clicks on <span> (x), close the modal
-		span5.onclick = function() { 
-			modal5.style.display = "none";
-			document.getElementsByTagName("BODY")[0].className = "";
-		}
+	// Get the modal5
+	var modal5 = document.getElementById('Model_project4');
+	var btnpj4 = document.getElementById('project4');
+	btnpj4.onclick = function(){
+		modal5.style.display = "block";
+		document.getElementsByTagName("BODY")[0].className = "noscroll";
+	}
+	// Get the <span> element that closes the modal
+	var span5 = document.getElementsByClassName("close")[5];
+
+	// When the user clicks on <span> (x), close the modal
+	span5.onclick = function() { 
+		modal5.style.display = "none";
+		document.getElementsByTagName("BODY")[0].className = "";
+	}
+
+	// Get the modal6
+	var modal6 = document.getElementById('Model_project5');
+	var btnpj5 = document.getElementById('project5');
+	btnpj5.onclick = function(){
+		modal6.style.display = "block";
+		document.getElementsByTagName("BODY")[0].className = "noscroll";
+	}
+	// Get the <span> element that closes the modal
+	var span6 = document.getElementsByClassName("close")[6];
+
+	// When the user clicks on <span> (x), close the modal
+	span6.onclick = function() { 
+		modal6.style.display = "none";
+		document.getElementsByTagName("BODY")[0].className = "";
+	}
 	
 	//
 	var slideIndex = 1;
